@@ -4,10 +4,19 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+import {BrowserRouter} from 'react-router-dom';
+/*
+	* Aquí vamos a envolver toda nuestra aplicación con el tipo de enrutado que queremos utilizar.
+	(React router dom)
+	* Usaremos la API de HTML5 History que permite cambiar el estado de las urls y sincronizar la UI con esos cambios. 
+	(BrowserRouter)
+*/
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+	<BrowserRouter>
+		<React.StrictMode>
+			<App />
+		</React.StrictMode>
+  	</BrowserRouter>,
   document.getElementById('root')
 );
 
